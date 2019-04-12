@@ -1,21 +1,14 @@
-<?php 
-	session_start();
-
-	if (!isset($_SESSION['Cliente'])) {
-		 	header("location: LoginCliente.php");
-	}		 
-?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Mundo Café</title>
+	<title>Márquez Coffee</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="css/carga.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
+	
 	<link rel="stylesheet" href="css/style.css">
 	
 	<!--Icono de la pestaña-->
@@ -23,7 +16,7 @@
 	<!--Fuente de google fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 	<!--Iconos-->
-	<link rel="stylesheet" href="fontawesome/css/fontawesome-all.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	
 <style>
 	
@@ -198,7 +191,7 @@
 		<div class="col-md-2"></div>
 	
 		<div class="col-md-2">
-			<a href="controlador/CerrarCecionCliente.php" title="Presione para cerrar sesión de su cuenta."><img src="img/CerrarSesion.png" width="80" height="80"></a>
+			<a href="index.html" title="Presione para cerrar sesión de su cuenta."><img src="img/CerrarSesion.png" width="80" height="80"></a>
 		</div>
 
 	</div>
@@ -208,7 +201,7 @@
 
 
 		<div class="col-md-6">
-			<a href="Factura.php"  class="btn btn-xlarge" style="padding-top: 24%"><h3>Realizar un encargo</h3></a>
+			<a href="Reservacion.html"  class="btn btn-xlarge" style="padding-top: 24%"><h3>Realizar un encargo</h3></a>
 
 			<div class="centro">
 				<div class="col-md-12">
@@ -223,7 +216,7 @@
 				
 				<div class="col-md-12">
 				
-					<a href="listaEncargosClientes.php"  class="btn btn-xlarge2" style="padding-top: 8%"><h3>Encargos realizados</h3></a>
+					<a href="404.html"  class="btn btn-xlarge2" style="padding-top: 8%"><h3>Encargos realizados</h3></a>
 				
 
 				</div>
@@ -237,7 +230,7 @@
 				
 				<div class="col-md-12">
 				
-					<a href="PerfilCliente.php"  class="btn btn-xlarge2" style="padding-top: 8%"><h3>Tu perfil</h3></a>
+					<a href="404.html"  class="btn btn-xlarge2" style="padding-top: 8%"><h3>Tu perfil</h3></a>
 				
 				</div>
 
@@ -270,67 +263,60 @@
 
 	<!--Inicio footer-->
 	<footer>
-		<div class="footer" id="footer">
-            <div class="contenedor">
-               <div class="centro">
-			
-                <div class="col-lg-3 col-xs-12">
-                   <a href="index.html" title="Ir a página principal."><span class="logo"><img src="img/Marca-de-café.png" width="200" height="200"></span></a>
-                </div>
-                <div class="col-lg-3 col-xs-12">
-                   <h3>MENÚ</h3>
-                    <ul>
-                        <li><a title="Ir a inicio." href="index.html" target="blank" title="Ir a inicio.">Inicio</a></li>
-                        <!-- <li><a href="#"  title="">Board of Directors</a></li> -->
-												<li><a href="#"  title="Ir a misión y visión.">Misión-Visión</a></li>
-												<li><a href="QuienesSomos.html"  title="">Sobre nosotros</a></li>
-												<li><a href="Contacto.html" title="Ir a contactos.">Contacto</a></li>
-                    </ul>
-                </div>
-				<div class="col-lg-3 col-xs-12">
-                    <h3>CATEGORÍAS  </h3>
-                    <ul>
-                         <li><a href="Galeria.html" target="blank" title="Ir a la galería.">Gallería</a></li>
-                        <li><a href="#" target="blank" title="">Video Gallery</a></li>
-						<li><a href="#" target="blank" title="">Noticias</a></li>
-						<li><a href="https://es.informationvine.com/index?qsrc=999&qo=semQuery&ad=semD&o=614711&l=sem&askid=6c8220ef-e2d4-498f-b3a8-afc9d9ad06ab-0-ie_gsb&q=compra%20venta%20de%20cafe&dqi=&am=broad&an=google_s" target="blank" title="">Anuncios</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-xs-12">
-                    <h3>CONTACTO</h3>
-                    <ul>
-                        <li> <a href="#" target="blank" title="">Dirección</a> </li>
-                        <li> <a title="">Teléfono: +504 2773-5000</a> </li>
-                        <li> <a href="#" target="blank" title="">Fax</a> </li>
-                        <li> <a title="">E-Mail: marquezCoffee@gmail.com</a> </li>
-                        <li> <a href="Desarrolladores2.html" target="blank" title="Ir a desarrolladores.">Desarrollador</a> </li>
-                    </ul>
-                </div>
+			<div class="footer" id="footer">
+							<div class="contenedor">
+								 <div class="centro">
 				
-             </div>
-          </div>
-        </div>
-
-			
-				
-					<div class="col-lg-12" style="background-color: #222;">
-						<a href="https://www.facebook.com/" target="blank" title="Ir a facebook." class="fab fa-facebook-f"  style="background-color: #222;"></a>
-						<a href="https://twitter.com/?lang=es" target="blank" title="Ir a twitter." class="fab fa-twitter" style="background-color: #222;"></a>
-						<a href="https://www.google.com/gmail" target="blank" title="Ir a gmail." class="fab fa-google" style="background-color: #222;"></a>
-						<a href="https://wwww.youtube.com" target="blank" title="Ir a youtube." class="fab fa-youtube" style="background-color: #222;"></a>
-						<a href="https://www.instagram.com/" target="_blank" title="Ir a instagram." class="fab fa-instagram" style="background-color: #222;"></a>
-						<a href="https://www.skype.com/es/" target="blank" title="Ir a skype." class="fab fa-skype" style="background-color: #222;"></a>
-				
+									<div class="col-lg-3 col-xs-12">
+										 <a href="index.html" title="Ir a página principal."><span class="logo"><img src="img/Marca-de-café.png" width="200" height="200"></span></a>
+									</div>
+									<div class="col-lg-3 col-xs-12">
+										 <h3>MENÚ</h3>
+											<ul>
+													<li><a title="Ir a inicio." href="index.html" title="Ir a inicio.">Inicio</a></li>
+													<li><a href="#"  title="Ir a misión y visión.">Misión-Visión</a></li>
+													<li><a href="QuienesSomos.html"  title="">Sobre nosotros</a></li>
+													<li><a href="#" title="Ir a contactos.">Contacto</a></li>
+											</ul>
+									</div>
+					<div class="col-lg-3 col-xs-12">
+											<h3>CATEGORÍAS  </h3>
+											<ul>
+													 <li><a href="Galeria.html" title="Ir a la galería.">Gallería</a></li>
+													<li><a href="Calidad.html" title="Ir a calidad">Café de calidad</a></li>
+							<li><a href="#" target="blank" title="">Noticias</a></li>
+							<li><a href="https://es.informationvine.com/index?qsrc=999&qo=semQuery&ad=semD&o=614711&l=sem&askid=6c8220ef-e2d4-498f-b3a8-afc9d9ad06ab-0-ie_gsb&q=compra%20venta%20de%20cafe&dqi=&am=broad&an=google_s" target="blank" title="">Anuncios</a></li>
+											</ul>
+									</div>
+									<div class="col-lg-3 col-xs-12">
+											<h3>CONTACTO</h3>
+											<ul>
+													<li> <a href="Tierras.html" title="">Terrenos</a> </li>
+													<li> <a title="">Teléfono: +504 2773-5000</a> </li>
+													<li> <a href="Porque.html"  title="">¿Porqué?</a> </li>
+													<li> <a title="">E-Mail: marquezCoffee@gmail.com</a> </li>
+													<li> <a href="Desarrollador.html"title="Ir a desarrollador.">Desarrollador</a> </li>
+											</ul>
+									</div>
+							 </div>
+						</div>
 					</div>
-				
-			
-       
-	</footer>
-	<!--Fin footer-->
-	<div class="footer-bottom">
-	    <p>Copyright © 2019. Todos los Derechos Reservados.</p>
-	</div>
 	
+						<div class="col-lg-12" style="background-color: #222;">
+							<a href="https://www.facebook.com/" target="blank" title="Ir a facebook." class="fab fa-facebook-f"  style="background-color: #222;"></a>
+							<a href="https://twitter.com/?lang=es" target="blank" title="Ir a twitter." class="fab fa-twitter" style="background-color: #222;"></a>
+							<a href="https://www.google.com/gmail" target="blank" title="Ir a gmail." class="fab fa-google" style="background-color: #222;"></a>
+							<a href="https://wwww.youtube.com" target="blank" title="Ir a youtube." class="fab fa-youtube" style="background-color: #222;"></a>
+							<a href="https://www.instagram.com/" target="_blank" title="Ir a instagram." class="fab fa-instagram" style="background-color: #222;"></a>
+							<a href="https://www.skype.com/es/" target="blank" title="Ir a skype." class="fab fa-skype" style="background-color: #222;"></a>
+					
+						</div>
+		</footer>
+		<!--Fin footer-->
+		<div class="footer-bottom">
+				<p>Copyright © 2019. Todos los Derechos Reservados.</p>
+		</div>
+		
 
 	
 	<!--SCRIPTS-->

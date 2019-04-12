@@ -6,6 +6,7 @@
 	box-sizing: border-box;
 }
 
+/* Definimos las propiedades de las clases que usaremos para formar el circulo de carga  */
 #contenedor_carga{
 	background-color: rgba(250,240,245,0.9);
 	height: 100%;
@@ -37,6 +38,7 @@
 	  -o-animation: girar 3s linear infinite;
 	  animation: girar 3s linear infinite;
 }
+/* La regla arroba @keyframes permite a los autores controlar los pasos intermedios en una secuencia de animación CSS mediante el establecimiento de keyframes (o puntos de trayectoria) a lo largo de la secuencia de animación que debe ser alcanzado por determinados puntos durante la animación */
 
 @keyframes girar{
 	from {transform: rotate(0deg);}
